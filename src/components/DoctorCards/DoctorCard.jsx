@@ -17,6 +17,9 @@ export default function DoctorCard({ doctorcard }) {
       onClick={() => setFlip(!flip)}
     >
       <div className="front" ref={frontEl}>
+        <div className="image-container">
+          <img src={doctorcard.sprites.other.showdown.front_default} alt={doctorcard.name} />
+        </div>
         <h3 className="name">
           Dr. {doctorcard.name ? doctorcard.name.charAt(0).toUpperCase() + doctorcard.name.slice(1) : "Strange" }
         </h3>
