@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import axios from 'axios'
 
 import DoctorCardList from "../../components/DoctorCards/DoctorCardList"
+import { departmentMappings } from "../../data/departments"
 
 const baseURL = 'https://pokeapi.co/api/v2/'
 
@@ -9,6 +10,10 @@ export default function Home() {
     const [doctorcards, setDoctorCards] = useState([])
     const [departments, setDepartments] = useState(["water"])
     const [doctors, setDoctors] = useState()
+
+    const getDepartmentName = (typeName) => {
+        return departmentMappings[typeName] || "Primary Care";
+    }
 
   //#region DATA FETCHING -------
 
@@ -58,9 +63,9 @@ export default function Home() {
     <div className="Home page">
 
       {departments.map((item, index) => {
-          return <button key={index} onClick={() => {
+          return <button className="department-btn" key={index} onClick={() => {
               handleClick(item.name)
-            }}>{item.name}</button>
+            }}>{getDepartmentName(item.name)}</button>
         })}
 
       <DoctorCardList doctorcards={doctorcards} />

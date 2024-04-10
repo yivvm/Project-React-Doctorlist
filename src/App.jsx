@@ -1,6 +1,6 @@
 import './App.css'
 
-// import Nav from './pages/Nav/Nav'
+import Nav from './components/Nav/Nav'
 
 //#region Page imports
 import Home from './pages/Home/Home'
@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className='App'>
-      {/* <Nav /> */}
+      <Nav />
 
       <Routes>
         <Route path='/' element={<Home />} />
