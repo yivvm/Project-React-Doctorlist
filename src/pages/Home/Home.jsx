@@ -62,13 +62,17 @@ export default function Home() {
   return (
     <div className="Home page">
 
-      {departments.map((item, index) => {
-          return <button className="department-btn" key={index} onClick={() => {
-              handleClick(item.name)
-            }}>{getDepartmentName(item.name)}</button>
-        })}
-
-      <DoctorCardList doctorcards={doctorcards} />
+        <div className="departments-container">
+            {departments.map((item, index) => {
+                return <button className="department-btn" key={index} onClick={() => {
+                    handleClick(item.name)
+                    }}>{getDepartmentName(item.name)}</button>
+                })}
+        </div>
+        
+        <div className="doctors-cards">
+            <DoctorCardList doctorcards={doctorcards} />
+        </div>
 
     </div>
   )

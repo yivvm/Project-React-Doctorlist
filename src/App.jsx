@@ -1,6 +1,7 @@
 import './App.css'
 
 import Nav from './components/Nav/Nav'
+import Departments from './pages/Departments/Departments'
 
 //#region Page imports
 import Home from './pages/Home/Home'
@@ -18,6 +19,7 @@ function App() {
 
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/departments' element={<Departments />} />
       </Routes>
 
     </div>

@@ -21,5 +21,6 @@
 }
 
 .Nav ul li a:hover {
-    color: #3498db;
+    color: #023E8A;
+    font-weight: bold;
 }

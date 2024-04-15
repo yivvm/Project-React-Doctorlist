@@ -14,7 +14,7 @@ const departmentMappings = {
   electric: "Psychiatry & Psychology",
   psychic: "Sports Medicine",
   ice: "Urology",
-  dragon: "Allery & Immunology",
+  dragon: "Allergy & Immunology",
   dark: "Dentistry",
   fairy: "Emergency Care",
   unknow: "Electric",

@@ -7,13 +7,16 @@ export default function Nav() {
     <nav className='Nav'>
       <ul>
         <li>
-            <Link to="/">Home</Link>
+            <Link to="/">Find a Doctor</Link>
         </li>
         <li>
-            <Link to="/">About</Link>
+            <Link to="/">Schedule Appointment Online</Link>
         </li>
         <li>
-            <Link to="/">Departments</Link>
+            <Link to="/departments">Departments</Link>
+        </li>
+        <li>
+            <Link to="/">My Health Account</Link>
         </li>
       </ul>
     </nav>
