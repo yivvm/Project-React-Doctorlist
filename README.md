@@ -27,7 +27,6 @@ The application features flip cards, allowing users to interactively view detail
 - **HTML/CSS**: Markup and styling languages for structuring and designing the UI.
 - **Axios**: Promise-based HTTP client for making API requests.
 - **React Router**: Declarative routing for React applications.
-- **Bootstrap**: CSS framework for responsive and mobile-first web development.
 
 ## Approach
 
