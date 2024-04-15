@@ -16,7 +16,7 @@ body {
     flex-wrap: wrap;
     background-color: white;
     padding: 0 1.5rem;
-    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .1);
 }
 
 .Home {
@@ -55,6 +55,21 @@ button:hover {
     background-color: rgb(50, 50, 137);
 }
 
+.results {
+    padding: 15px 10px;
+    background-color: rgb(77, 77, 201);
+    color: white;
+    font-size: 1rem;
+}
+
+.results > p {
+    padding: 10px;
+}
+
+.results > p > strong {
+    font-size: 1.5rem;
+}
+
 .form-group {
     display: flex;
     flex-direction: column;
@@ -81,10 +96,10 @@ button:hover {
     align-items: center;
     position: relative;
     /* border-radius: .25rem; */
-    box-shadow: 0 0 5px 2px rgba(3, 1, 64, 0.3);
+    box-shadow: 0 0 5px 2px rgba(3, 1, 64, 0.1);
     background-color: white;
     transform-style: preserve-3d;
-    height: 250px;
+    height: 280px;
     width: 200px;
     transition: 150ms;
     cursor: pointer;
@@ -107,8 +122,10 @@ button:hover {
 .card .front,
 .card .back {
     position: absolute;
-    padding: 1rem;
+    padding: 1.5rem;
     backface-visibility: hidden;
+    max-width: 200px;
+    max-height: 300px;
 }
 
 .card .back {
@@ -132,5 +149,13 @@ button:hover {
 .image-container {
     width: 60%;
     height: 60%;
+    max-width: 150px;
+    max-height: 150px;
     text-align: center;
+}
+
+.placeholder-image {
+    width: 100%;
+    height: 100%;
+    background-color: white;
 }

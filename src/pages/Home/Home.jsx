@@ -68,7 +68,14 @@ export default function Home() {
                     handleClick(item.name)
                     }}>{getDepartmentName(item.name)}</button>
                 })}
+            <div className="results">
+                <p>
+                    Refine Results
+                </p>
+                <p><strong>{doctorcards.length}</strong> matching providers</p>
+            </div>
         </div>
+       
         
         <div className="doctors-cards">
             <DoctorCardList doctorcards={doctorcards} />

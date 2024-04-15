@@ -18,7 +18,15 @@ export default function DoctorCard({ doctorcard }) {
     >
       <div className="front" ref={frontEl}>
         <div className="image-container">
-          <img src={doctorcard.sprites.other.showdown.front_default} alt={doctorcard.name} />
+          {doctorcard.sprites.other.showdown.front_default || doctorcard.sprites.front_default ? (
+            <img 
+              src={doctorcard.sprites.other.showdown.front_default ? doctorcard.sprites.other.showdown.front_default : doctorcard.sprites.front_default} 
+              alt={doctorcard.name} 
+              style={{ maxWidth: "150px", maxHeight: "130px" }} 
+            />
+          ) : (
+            <div className="placeholder-image" />
+          )}
         </div>
         <h3 className="name">
           Dr. {doctorcard.name ? doctorcard.name.charAt(0).toUpperCase() + doctorcard.name.slice(1) : "Strange" }
@@ -39,7 +47,10 @@ export default function DoctorCard({ doctorcard }) {
         </div>
       </div>
       <div className="back" ref={backEl}>
-        {"View Profile"}
+        {"View Profile"}<br />
+        {"Schedule Appointment Online"}<br />
+        {`Call 999-999-9999`}<br />
+        {`Reviews`}<br />
       </div>
     </div>
   );
