@@ -40,7 +40,7 @@ The approach taken in developing React Doctor Directory involved the following s
 
 ## Live Site
 
-You can access the live site here:
+You can access the live site here: https://project-react-doctorlist.onrender.com
 
 ## Installation
 
@@ -68,5 +68,5 @@ Once the application is running, users can:
 - Refine the results by clicking on different departments:
   ![departments](./screenshots/departments.png)
 
-- Flip cards:
+- Flip cards
   ![flipcards](./screenshots/flipcards.png)
