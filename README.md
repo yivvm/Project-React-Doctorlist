@@ -40,7 +40,7 @@ The approach taken in developing React Doctor Directory involved the following s
 
 ## Live Site
 
-You can access the live site here: https://project-react-doctorlist.onrender.com
+You can access the live site here: [https://project-react-doctorlist.onrender.com](#https://project-react-doctorlist.onrender.com)
 
 ## Installation
 
